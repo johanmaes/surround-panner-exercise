@@ -1,0 +1,60 @@
+.steps {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.step-title {
+  height: 2rem;
+}
+
+.pie-wrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.pie-content {
+  position: absolute;
+}
+
+.pie {
+  --w: 100px;
+  width: var(--w);
+  height: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+  font-family: sans-serif;
+}
+
+.pie:before {
+  transform: rotate(var(--t));
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.step-title {
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  border-top: 10px solid grey;
+  margin-top: 2rem;
+}
