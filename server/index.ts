@@ -9,9 +9,15 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send({
-    status: "ok",
+    x: req.query.x,
+    y: req.query.y,
+    l: Math.round(Math.random() * 100),
+    r: Math.round(Math.random() * 100),
+    c: Math.round(Math.random() * 100),
+    ls: Math.round(Math.random() * 100),
+    rs: Math.round(Math.random() * 100),
   });
 });
 
