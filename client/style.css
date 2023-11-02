@@ -1,0 +1,17 @@
+:root {
+  --surround-panner-color-primary: #00b;
+  --surround-panner-color-secondary: #fff;
+  --surround-panner-color-grey: #ccc;
+  --surround-panner-color-grey-light: #fbfbfb;
+  --surround-panner-color-dark: #1d1d1d;
+  --surround-panner-space-sm: 4px;
+  --surround-panner-space-md: 8px;
+  --surround-panner-space-lg: 16px;
+  --surround-panner-space-xl: 32px;
+  --surround-panner-radius: var(--surround-panner-space-sm);
+  --surround-panner-font-family: "Verdana";
+}
+
+body {
+  background-color: black;
+}
